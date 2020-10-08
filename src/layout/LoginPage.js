@@ -9,7 +9,7 @@ const LoginPage = () => {
         <div className="card-body">
           <form className="form">
             <div className="form-group">
-              <label for="exampleInputEmail1">Email address</label>
+              <label for="exampleInputEmail1">Email </label>
               <input
                 type="email"
                 className="form-control"
