@@ -19,7 +19,7 @@ const LoginPage = () => {
               
             </div>
             <div className="form-group">
-              <label for="exampleInputPassword1">Password</label>
+              <label for="exampleInputPassword1">Contraseña</label>
               <input
                 type="password"
                 className="form-control"
@@ -27,7 +27,7 @@ const LoginPage = () => {
               />
             </div>
             <button type="submit" className="btn btn-primary">
-              Submit
+              Acceder
             </button>
           </form>
         </div>
