@@ -9,7 +9,7 @@ const LoginPage = () => {
         <div className="card-body">
           <form className="form">
             <div className="form-group">
-              <label for="exampleInputEmail1">Email address</label>
+              <label for="exampleInputEmail1">Email </label>
               <input
                 type="email"
                 className="form-control"
@@ -19,7 +19,7 @@ const LoginPage = () => {
               
             </div>
             <div className="form-group">
-              <label for="exampleInputPassword1">Password</label>
+              <label for="exampleInputPassword1">Contraseña</label>
               <input
                 type="password"
                 className="form-control"
@@ -27,7 +27,7 @@ const LoginPage = () => {
               />
             </div>
             <button type="submit" className="btn btn-primary">
-              Submit
+              Acceder
             </button>
           </form>
         </div>
