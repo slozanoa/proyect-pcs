@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import axios from "axios";
 import clienteAxios from "../config/axios";
-import { useHistory } from "react-router-dom";
+import { useHistory,Link } from "react-router-dom";
 
 const LoginPage = () => {
   let history = useHistory();
@@ -70,6 +70,8 @@ const LoginPage = () => {
               Iniciar sesión
             </button>
           </form>
+          <hr/>
+          <Link to="/Register">No tengo cuenta</Link>
         </div>
       </div>
     </Fragment>
