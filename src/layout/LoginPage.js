@@ -10,6 +10,7 @@ const LoginPage = () => {
     password:''
   })
   const [error, actualizarError] = useState(false);
+  const [loading, setLoading] = useState(false)
   const {email, password} = user
   const actualizarState = (e) => {
     setUser({
@@ -29,12 +30,17 @@ const LoginPage = () => {
     let json = JSON.stringify(user);
     let params = "json=" + json;
     axios.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
+    setLoading(true)
     clienteAxios.post("/user/login", params)
       .then(function (response) {
         console.log(response);
+        setLoading(false)
+
         history.push('/productos')
       })
       .catch(function (error) {
+    setLoading(false)
+
         console.log(error);
       });
   };
@@ -66,9 +72,15 @@ const LoginPage = () => {
                 value={password}
               />
             </div>
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" disabled={loading} className="btn btn-primary">
+              {loading && (
+               
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  
+                 
+              )}
               Iniciar sesión
-            </button>
+               </button>
           </form>
           <hr/>
           <Link to="/Register">No tengo cuenta</Link>
