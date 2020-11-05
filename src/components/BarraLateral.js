@@ -3,7 +3,7 @@ import React from 'react'
 const BarraLaterl = ()=>{
     return (
       <>
-         Proyecto
+         holi
       </>
     )
 }
