@@ -46,9 +46,8 @@ const LoginPage = () => {
   };
   return (
     <Fragment>
-      
       <div className="card margincard">
-        <h2 className="title">Inicia sesión</h2>
+        <h2 className="title">Inicia sesión ya</h2>
         <div className="card-body">
           <form className="form" onSubmit={submitLogin}>
             <div className="form-group">
@@ -79,7 +78,7 @@ const LoginPage = () => {
                   
                  
               )}
-              Iniciar sesión
+              Iniciar sesión ya
                </button>
           </form>
           <hr/>
