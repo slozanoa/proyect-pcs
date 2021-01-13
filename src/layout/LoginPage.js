@@ -47,6 +47,7 @@ const LoginPage = () => {
   return (
     <Fragment>
       <div className="card margincard">
+        <sapan>fhfjfkfkfkkf</sapan>
         <h2 className="title">Inicia sesión ya</h2>
         <div className="card-body">
           <form className="form" onSubmit={submitLogin}>
