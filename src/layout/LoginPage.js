@@ -47,7 +47,11 @@ const LoginPage = () => {
   return (
     <Fragment>
       <div className="card margincard">
+<<<<<<< HEAD
         <sapan>fhfjfkfkfkkf</sapan>
+=======
+        <p>ueirororo</p>
+>>>>>>> feature/barraNavegacion
         <h2 className="title">Inicia sesión ya</h2>
         <div className="card-body">
           <form className="form" onSubmit={submitLogin}>
